@@ -11,5 +11,21 @@
 public class App {
     public static void main(String[] args) throws Exception {
         Scanner scanner = new Scanner(System.in);
+        int pass=0;
+        int fail=0;
+   while(true){
+    int number=Integer.valueOf(scanner.nextLine());
+    if(number==-1){
+        System.out.println(pass+" Passing grades and "+fail+" failing grades");
+    break;
+    }else if(number<0||number>100){
+        System.out.println("Invalid input");
+    }else if(number>=60){
+    pass++;
+ }else{
+    fail++;
+ }
+    
+   }
     }
 }
